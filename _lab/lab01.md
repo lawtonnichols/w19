@@ -1,9 +1,9 @@
 ---
 layout: lab
 num: lab01
-ready: true
+ready: false
 desc: "Crunching numbers: Loops and functions "
-assigned: 2019-01-22 9:00:00.00-7
+assigned: 2019-01-17 9:00:00.00-7
 due: 2019-01-29 9:00:00.00-7
 ---
 
@@ -12,45 +12,29 @@ due: 2019-01-29 9:00:00.00-7
 ## Goals for this lab
 
 In this lab you will get practice 
-* working in pairs
-* learn to use github's web interface
-* for loops and while loops
-* calculating a series using for loops and if-else statements
-* working with other data types (doubles)
-* nested loops
-* functions
+* using github's web interface
+* using `for` loops and `while` loops
+* calculating a series using `for` loops and `if-else` statements
+* working with other data types (`doubles`)
+* writing nested loops
+* writing functions
 
 
-## Working in Pairs
+## Log in and create a local directory
 
-Pair programming is encouraged, but not required.
-
-You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.
-
-Please sit with your pair partner on the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after awhile, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
-
-[http://bit.ly/pair-programming-video](http://bit.ly/pair-programming-video)
-
-* If you have questions about pair programming, ask a TA or tutor.
-
-* If you face difficulties with pair programming consult with a TA or tutor.
-
-
-## Log on and create a local directory
-
-* Log into the driver's CoE account on CSIL and open a terminal.
-* Under your cs16 directory, driver create a new directory named lab01 (refer to lab00 for instructions if you have forgotten how to do this)
+* Log into your CoE account on CSIL and open a terminal.
+* Under your **cs16** directory, create a new directory named **lab01** (refer to lab00 for instructions if you have forgotten how to do this)
 
 You are now ready to get the starter code.
 
 ## Getting the starter code  <a name="getstarter"></a>
 
-Copy the code from the instructor's account on the CSIL server into your local lab01 directory by issuing the following command:
+Copy the code from the instructor's account on the CSIL server into your local **lab01** directory by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
 
 ```
 -bash-4.2$ cp /cs/faculty/ykk/cs16/labs/lab01/* ~/cs16/lab01/
 ```
-After doing this command, if you cd into ~/cs16/lab01/ and use the ls command, you should see three .cpp files and a README:
+After running this command, if you `cd` into **~/cs16/lab01/** and use the `ls` command, you should see three **.cpp** files and a README:
 
 ```
 -bash-4.2$ ls
@@ -58,30 +42,24 @@ min2.cpp  min3v1.cpp  min3v2.cpp README.md
 -bash-4.2$
 ```
 
-If you don't see those files, work with your pair partner to go back through the instructions and make sure you didn't miss a step. If you still have trouble, ask your TA or tutor for assistance.
+If you don't see those files, make sure you didn't miss a step. If you still have trouble, ask your TA or tutor for assistance.
 
 ## Create a repo on github in our class organization
 
-For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-w19 organization. Follow these steps
+For this lab and all subsequent programming assignments, you should start by creating a repo in the **ucsb-cs16-w19** organization. Follow these steps
 
-* Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization
+* Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization.
 * Click on the green "New repository" button to create a new repository.
 
-* Type the name of your repo following the naming convention lab01_your-github-username. For example if your github username is jgaucho, you should name your repo as lab01_jgaucho. If you are working with a partner, include your partner's github username in the name of the repo. e.g. lab01_jgaucho_alily
+* Type the name of your repo following the naming convention **`lab01_your-github-username`**. For example if your github username is _jgaucho_, you should name your repo as **`lab01_jgaucho`**. 
 
 * Select the "Private" visibility option so that other students in the org cannot view your code.
 
-* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below.
+* Add the C++ **.ignore** option from the dropdown menu and click on "Create repository". See screenshot below.
 
 ![new-repo](/w19/lab/lab00/enter-org/pic5.png){:height="500px"}
 
 * Click on the "Create repo button"
-
-* Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner's github username under collaborators and add them. Log out of github.
-
-* Navigator, log into github and accept the invitation.
-
-* You now have shared ownership of all the code that you will write for this lab.
 
 ## Upload the initial version of your code using github's web interface 
 
@@ -93,7 +71,6 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 ## Solving the problems for this lab<a name="programs"></a>
 
-If you are in a pair, make sure you switch the driver and navigator roles at this point. You must switch roles twice more before the end of the lab.
 This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. Each should be solved in its own file and all three must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS sheet carefully.
 
 You will need to create <b>three files named block.cpp, min4.cpp, and pi.cpp</b>:
@@ -194,8 +171,6 @@ Upload your files to your repo on github using github's web interface following 
 
 ### Calculate the approximate value of PI
 
-Switch roles with your partner.
-
 Write a C++ program in a file named pi.cpp that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
 
 ```
@@ -257,8 +232,6 @@ To calculate x to the power of y, use the pow(x,y) function from the standard li
 Upload your files to your repo on github using github's web interface. (You will need to be on a csil machine and not remotely logged in to do this step (because you need to use a web browser with access to those files). Disregard this if you're working on your own machine.)
 
 ### Calculate the minimum of 4 numbers
-
-Switch roles with your partner.
 
 In this part of the lab you will write a program that compares 4 input numbers and prints out the smallest one.
 

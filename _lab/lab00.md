@@ -116,7 +116,9 @@ Once you have a terminal window open on your machine, you next need to **connect
 
 You will do this using a UNIX command (an internet protocol, really) called <em>SSH</em> (short for Secure SHell).
 
-Type the following command in your terminal, replacing <b>USERNAME</b> with <b>your CoE username</b> and substituting ## with a number between 01 and 48:
+Type the following command in your terminal, replacing <b>USERNAME</b> with <b>your CoE username</b> and substituting ## with a number between 01 and 48 (make sure to have a 0 in front, if you are using numbers between 1 and 9). 
+**Note**:
+The <b>$</b> represents the terminal prompt; <i>you won't type this character</i>. Whenever you see it, that means that the following command is intended to be typed into the terminal window and run by pressing Enter.
 
 ```
 $ ssh USERNAME@csil-##.cs.ucsb.edu
@@ -242,7 +244,7 @@ Let's dive in! Open the file:
 $ vim ~/.vimrc
 ```
 
-Look at the bottom of the vim window to check if you are in the "Insert" mode (if you are not, then type `i`). Either copy/paste or type the following four lines into the file:
+Look at the bottom of the vim window to check if you are in the "Insert" mode (if you are not, then type `i`). Either copy/paste (by right-clicking using the mouse, if you are using the terminals in the lab) or type the following four lines into the file:
 
 ```
 set nu
@@ -285,7 +287,8 @@ int main() {
     return 0;
 }
 ```
-Go ahead and type this in to the **hello.cpp** file. Alternatively, you can copy and paste it directly from this page.
+Go ahead and type this in to the new file called **hello.cpp** (you will need to do `vim hello.cpp`). Alternatively, you can copy and paste it directly from this page.
+
 **Important note**: For students familiar with Python, remember that lines starting with the <b>`#`</b> character are not comments in C++. Rather, they are important `include` lines that allow your program to use the input and output functionality. Make sure to copy those lines in your program as well. Only <b>`//`</b> or <b>`/*`</b> create comments in C++.
 
 Next, you will need to replace the comment with code to print out the expected output. Comments in C++ are lines that start with <b>`//`</b> or text between <b>`/*`</b> and <b>`*/`</b>. The latter style of comment allows text to span multiple lines.
@@ -350,6 +353,7 @@ For this lab, if everything is correct, you'll see a successful submission passi
 
 Congratulations on completing your first C++ program!
 
+## Step 8: Log Out!
 <strong>NOTE:</strong> If you are in the Phelps lab or in CSIL,<b> make sure to log out of the machine before you leave</b>. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
 If you are logged in remotely, you can log out using the <b>exit</b> command in UNIX:

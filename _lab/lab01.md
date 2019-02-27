@@ -1,9 +1,15 @@
 ---
 layout: lab
 num: lab01
+<<<<<<< HEAD
 ready: false
 desc: "Crunching numbers: Loops and functions "
 assigned: 2019-01-17 9:00:00.00-7
+=======
+ready: true
+desc: "Crunching numbers: Loops and functions "
+assigned: 2019-01-22 9:00:00.00-7
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 due: 2019-01-29 9:00:00.00-7
 ---
 
@@ -12,6 +18,10 @@ due: 2019-01-29 9:00:00.00-7
 ## Goals for this lab
 
 In this lab you will get practice 
+<<<<<<< HEAD
+=======
+* working in pairs
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 * using github's web interface
 * using `for` loops and `while` loops
 * calculating a series using `for` loops and `if-else` statements
@@ -20,16 +30,52 @@ In this lab you will get practice
 * writing functions
 
 
+<<<<<<< HEAD
 ## Log in and create a local directory
 
 * Log into your CoE account on CSIL and open a terminal.
 * Under your **cs16** directory, create a new directory named **lab01** (refer to lab00 for instructions if you have forgotten how to do this)
+=======
+## Working in Pairs
+
+Pair programming is required for this lab.
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+Please sit with your pair partner at the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after a while, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
+
+<http://bit.ly/pair-programming-video>
+
+*    If you have questions about pair programming, ask a TA or tutor.
+
+*    If you face difficulties with pair programming consult with a TA or tutor.
+
+
+## Log in and create a local directory
+
+* Log into the driver's CoE account on CSIL and open a terminal.
+* Under your **cs16** directory, the driver should create a new directory named **lab01** (refer to lab00 for instructions if you have forgotten how to do this)
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 You are now ready to get the starter code.
 
 ## Getting the starter code  <a name="getstarter"></a>
 
+<<<<<<< HEAD
 Copy the code from the instructor's account on the CSIL server into your local **lab01** directory by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
+=======
+The following instructions will work only if you are working on the CSIL server. If you are working on your laptop, you will need to use remote copy via `scp`.
+<https://ucsb-cs16.github.io/topics/csil_copying_files/>
+
+Copy the code from the instructor's account _on the CSIL server_ into your **lab01** directory _on the CSIL server_ by issuing the following command (**remember that `-bash-4.2$` represents the command prompt and you don't need to type it in**):
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
 -bash-4.2$ cp /cs/faculty/ykk/cs16/labs/lab01/* ~/cs16/lab01/
@@ -42,16 +88,39 @@ min2.cpp  min3v1.cpp  min3v2.cpp README.md
 -bash-4.2$
 ```
 
+<<<<<<< HEAD
 If you don't see those files, make sure you didn't miss a step. If you still have trouble, ask your TA or tutor for assistance.
 
 ## Create a repo on github in our class organization
 
 For this lab and all subsequent programming assignments, you should start by creating a repo in the **ucsb-cs16-w19** organization. Follow these steps
+=======
+If you don't see those files, work with your pair partner to go back through the instructions and make sure you didn't miss a step. If you still have trouble, ask your TA or tutor for assistance.
+
+## Create a repo on github in our class organization
+
+For this lab and all subsequent programming assignments, you should start by creating a repo _in the **ucsb-cs16-w19** organization_. 
+**You may not receive any credit for this lab if you do not create the repository under the organization (i.e., do NOT create it in your own account).**
+
+Make sure that when you create a repo, the **Owner** is the **ucsb-cs16-w19** organization (**NOT** your personal account).
+
+**Your group needs ONLY ONE repo for this assignment.** 
+Because your lab partner is going to be added as a collaborator, you will both have access to the repository, so there is **no need to create a duplicate repo**.
+
+**IMPORTANT**. 
+If you haven't completed the **"Setup GitHub and add yourself to our organization" steps from Lab00**, then make sure you do it now, otherwise, you won't be able to access the organization and follow the steps below. 
+
+When you verified that your GitHub account is associated with the correct email address (see Lab00 instructions), you can follow these steps to create a new repo:
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 * Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization.
 * Click on the green "New repository" button to create a new repository.
 
+<<<<<<< HEAD
 * Type the name of your repo following the naming convention **`lab01_your-github-username`**. For example if your github username is _jgaucho_, you should name your repo as **`lab01_jgaucho`**. 
+=======
+* Type the name of your repo following the naming convention **`lab01_your-github-username`**. For example if your github username is _jgaucho_, you should name your repo as **`lab01_jgaucho`**. If you are working with a partner, include your partner's github username in the name of the repo. e.g., `**lab01_jgaucho_alily**`.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 * Select the "Private" visibility option so that other students in the org cannot view your code.
 
@@ -61,22 +130,55 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 * Click on the "Create repo button"
 
+<<<<<<< HEAD
 ## Upload the initial version of your code using github's web interface 
 
 * Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). On your web browser, navigate to your repo on github. Click on the "Upload files" button.
 
 * Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the files you uploaded are correctly listed. Click on it and you should see your code on github's web interface. 
 
+=======
+* Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner's github username under collaborators and add them. 
+The driver should now log out of github.
+
+* Navigator, log into github and accept the invitation.
+
+* You now have shared ownership of all the code that you will write for this lab.
+
+
+## Upload the initial version of your code using github's web interface 
+
+* Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). 
+    * On your web browser, navigate to your repo on github. 
+    * Click on the "Upload files" button.
+
+* Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the files you uploaded are correctly listed. Click on it and you should see your code on github's web interface. 
+
+You have created an initial copy of the starter files for this lab.
+
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 
 ## Solving the problems for this lab<a name="programs"></a>
 
+<<<<<<< HEAD
 This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. Each should be solved in its own file and all three must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS sheet carefully.
+=======
+If you are in a pair, make sure you switch the driver and navigator roles at this point. You must switch roles twice more before the end of the lab.
+
+This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. 
+
+Each problem should be solved **in its own file** and **all three** must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS page carefully.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 You will need to create <b>three files named block.cpp, min4.cpp, and pi.cpp</b>:
 Each corresponds to one of the problems listed below, which make up this lab.
 
+<<<<<<< HEAD
 For a reminder on how to open and use a text editor to create and edit new source files, refer back to Lab #0.
+=======
+For a reminder on how to open and use a text editor to create and edit new source files, refer back to Lab 00.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 For all the subproblems given in this assignment you must compile your code frequently (as you develop it), and test it extensively with as many inputs as you can think of.
 
@@ -84,11 +186,19 @@ For all the subproblems given in this assignment you must compile your code freq
 
 ### Print a block
 
+<<<<<<< HEAD
 * Navigate to your lab01 directory using the cd command
 * open a file called `block.cpp` using the same editor you used for the previous labs.
 * In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for *either* of the input parameters.
 
 A session should look <b><i>exactly</i></b> like the following example (including whitespace and formatting - note that there is no whitespace at the end of each of these lines), for all the different inputs and the output:
+=======
+* Navigate to your **lab01** directory using the `cd` command.
+* open a file called **block.cpp** using the same editor you used for the previous labs.
+* In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for **either** of the input parameters.
+
+A session should look <b><i>exactly</i></b> like the following example for all the different inputs and the output (including whitespace and formatting - note that there is no whitespace at the end of each of these lines):
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
 $ ./block
@@ -119,9 +229,22 @@ Enter number of rows and columns:
 0 1
 ```
 
+<<<<<<< HEAD
 Each string printed by the program should include a newline at the end, but no other trailing whitespace (i.e. extra space characters at the end of the line).
 
 For this problem you have to use a for-loop and a while or do-while loop. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. Here is the syntax for while
+=======
+Note that when you are collecting user input, if you want to store the values in two variables, e.g., `var1` and `var2`, then the `cin` statement would be as follows (no need to provide a space inside your code):
+
+```c++
+cin >> var1 >> var2;
+```
+
+
+Each string printed by the program should include a newline at the end, but **no other trailing whitespace** (i.e., extra space characters at the end of the line).
+
+For this problem you have to use a `for` loop and a `while` or `do-while` loop. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. Here is the syntax for `while`
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
 while('expression'){
@@ -129,7 +252,11 @@ while('expression'){
 }
 ```
 
+<<<<<<< HEAD
 'expression' should be replaced by the appropriate boolean expression. The body of the loop is executed as long as the expression is true. e.g.
+=======
+'expression' should be replaced by the appropriate boolean expression. The body of the loop is executed as long as the expression is true. E.g.,
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
 int x=5;
@@ -138,6 +265,7 @@ while(x>0){
 	x--;
 }
 ```
+<<<<<<< HEAD
 The above code prints 5 4 3 2 1.
 
 
@@ -154,6 +282,17 @@ make block
 If you used the first option (g++ ...) note that the -std=c++11 option in these commands is optional to use (that is, not critical to define). All this does is force the compiler to use the latest version of C++.
 
 If you used the second option (make...) note that the make program is clever to compile only block.cpp into the block executable, even though there are other programs (cpp files) in that directory. Note that the C++11 compiler will not be used in the default make tool. But that should be okay for now.
+=======
+The above code prints "5 4 3 2 1 " (includes a space at the end).
+
+
+To compile your code use the `g++` command:
+
+`$ g++ -std=c++11 -o block block.cpp`
+
+
+Note that the `-std=c++11` flag is optional to use (that is, not critical to define). All this does is force the compiler to use the latest version of C++.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 
 <b>If you encounter an error, use the compiler hints and examine the line in question. If the compiler messsage is not sufficient to identify the error, you can search online to see when the error occurs in general.</b>
@@ -171,7 +310,13 @@ Upload your files to your repo on github using github's web interface following 
 
 ### Calculate the approximate value of PI
 
+<<<<<<< HEAD
 Write a C++ program in a file named pi.cpp that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
+=======
+Switch roles with your partner.
+
+Write a C++ program in a file named **pi.cpp** that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
  1 – 1/3 + 1/5 – 1/7 + 1/9 ...  = pi/4
@@ -185,7 +330,11 @@ pi = 4 · [ 1 – 1/3 + 1/5 – 1/7 + 1/9 ... + (–1 ^ n)/(2n + 1) ]
 
 The Leibniz formula works well for high values of n.
 
+<<<<<<< HEAD
 The program takes an input from the user for the value of n, which determines the number of terms in the approximation of the value of pi. The program then outputs the approximated value of pi as calculated by the Leibniz formula. You must also include a loop that allows the user to repeat this calculation for new values of 'n' until the user says she or he wants to end the program by issuing an input of -1 (or any other negative number). You may assume that the user always inputs an integer.
+=======
+The program takes an input from the user for the value of n, which determines the number of terms in the approximation of the value of pi (i.e., **the approximation is using n + 1 terms**). The program then outputs the approximated value of pi as calculated by the Leibniz formula. You must also include a loop that allows the user to repeat this calculation for new values of 'n' until the user says she or he wants to end the program by issuing an input of -1 (or any other negative number). You may assume that the user always inputs an integer.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 The program should print a string of text to the terminal before getting each piece of input from the user. A session should look like the following example (including whitespace and formatting), showing the expected output for different inputs:
 
@@ -218,14 +367,22 @@ Be sure to have a newline after each "Enter the value..." prompt and no other wh
 
 Here is a link that gives the approximated values of pi for up to 1000 terms: [http://www.eveandersson.com/pi/gregory-leibniz](http://www.eveandersson.com/pi/gregory-leibniz)
 
+<<<<<<< HEAD
 In addition, all approximated floating pointer numbers must be displayed to exactly three digits after the decimal point. To do this you should use set the precision for displaying floating point numbers before any of the cout statements in your code. This is done as follows:
+=======
+In addition, all approximated floating pointer numbers must be displayed to exactly three digits after the decimal point. To do this you should use set the precision for displaying floating point numbers before any of the `cout` statements in your code. This is done by including the following lines **inside of your `main()`**:
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 ```
 cout.setf(ios::fixed); 	   // Display in fixed point notation. For example, display 1e-1 as 0.1
 cout.setf(ios::showpoint); // Always display the decimal point.
 cout.precision(3);         // Set the number of digits to display after the decimal point to 3
 ```
+<<<<<<< HEAD
 To calculate x to the power of y, use the pow(x,y) function from the standard library. To do this you will need to include the header file: cmath
+=======
+To calculate x to the power of y, use the `pow(x,y)` function from the standard library. To do this you will need to `#include` the header file: `cmath`
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 <hr>
 
@@ -233,6 +390,11 @@ Upload your files to your repo on github using github's web interface. (You will
 
 ### Calculate the minimum of 4 numbers
 
+<<<<<<< HEAD
+=======
+Switch roles with your partner.
+
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 In this part of the lab you will write a program that compares 4 input numbers and prints out the smallest one.
 
 **You should not use the *min()* function in C++ algorithm library or any other outside function that performs the minimum operation for you. Instead, you should base the program on the example programs provided to you that compare fewer inputs.**
@@ -242,6 +404,7 @@ Start by examining the given examples, also described below:
 
 <b>min2.cpp</b>
 
+<<<<<<< HEAD
 This program takes two command line arguments, and converts them to integers.  It then calls a function, smallest_of_two, that returns the smallest of the two numbers (or the value they share in case of a tie.) It then prints out the result of that function call.
 
 <b>min3v1.cpp</b>
@@ -251,6 +414,17 @@ This is the first of two versions of a program that takes min2.cpp one step furt
 <b>min3v2.cpp</b>
 
 This program does EXACTLY the same thing as min3v1.cpp, but does it with much cleaner, simpler code. Notice how we REUSE the smallest_of_two function to build up a smallest_of_three function.
+=======
+This program takes two command-line arguments, and converts them to integers.  It then calls a function, `smallest_of_two`, that returns the smallest of the two numbers (or the value they share in case of a tie.) It then prints out the result of that function call.
+
+<b>min3v1.cpp</b>
+
+This is the first of two versions of a program that takes **min2.cpp** one step further, finding the smallest value from among three numbers. Again, if there is a tie, it prints the tie value. Look at the nested if/else statements and see if you can make sense of the logic. Seek help if you don't.
+
+<b>min3v2.cpp</b>
+
+This program does EXACTLY the same thing as **min3v1.cpp**, but does it with much cleaner, simpler code. Notice how we REUSE the `smallest_of_two` function to build up a `smallest_of_three` function.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 Your job in this step is to test min2, min3v1 and min3v2 with many different values and convince yourself that they work properly.
 
@@ -299,12 +473,21 @@ Upload your files to your repo on github using github's web interface.
 
 
 
+<<<<<<< HEAD
 ## Submit your code on gradescope<a name="submit"></a>
 
 Once you are satisfied that your program is correct, then it's time to submit it.
 
 
 Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS 16 Fall 2018 (Nichols). Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
+=======
+## Submit your code on Gradescope<a name="submit"></a>
+
+Once you are satisfied that **your programs are correct**, then it's time to submit them. Note that Gradescope will display an error if you don’t upload **all six files**.
+
+
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a Github repo. _Select the second option and select your Github repo for this assignment._ You should receive full credit for a completely correct program.
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 
 
@@ -313,19 +496,31 @@ Log into your account on [https://www.gradescope.com/](https://www.gradescope.co
 
 
 
+<<<<<<< HEAD
 ## Done!<a name="done"></a>
+=======
+## Log Out!<a name="done"></a>
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 You are now done with this assignment!
 If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
+<<<<<<< HEAD
 If you are logged in remotely, you can log out using the exit command:
+=======
+If you are logged in remotely, you can log out using the `exit` command:
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 `$ exit`
 
 
 ## Grading rubric
 
+<<<<<<< HEAD
 In addition to the points given by gradescope, our staff will be manually grading your code for style. Code style, includes but is not limited to the following:
+=======
+In addition to the points given by gradescope, our staff may be manually grading your code for style. Code style, includes but is not limited to the following:
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
 
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
@@ -346,3 +541,7 @@ In completing this lab you must also demonstrate an understanding of the followi
 
 
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c292e5fc74ea2aa23f3b2d063444de377ff34741
